@@ -11,15 +11,11 @@ block view
               p.text-body-secondary Sign In to your account
               .input-group.mb-3
                 span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
-                      |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user.svg').icon
                 input.form-control(type='text', placeholder='Username')
               .input-group.mb-4
                 span.input-group-text
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked")
-                      |
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-lock-locked.svg').icon
                 input.form-control(type='password', placeholder='Password')
               .row
                 .col-6

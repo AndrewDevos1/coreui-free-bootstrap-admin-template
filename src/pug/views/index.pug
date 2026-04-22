@@ -27,15 +27,12 @@ block view
           div
             .fs-4.fw-semibold 26K 
               span.fs-6.fw-normal (-12.4%
-                svg.icon
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-bottom.svg').icon.me-2
                 | )
             div Users
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              svg.icon
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
-                |
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon.me-2
             .dropdown-menu.dropdown-menu-end
               a.dropdown-item(href='#') Action
               a.dropdown-item(href='#') Another action
@@ -49,14 +46,12 @@ block view
           div
             .fs-4.fw-semibold $6.200 
               span.fs-6.fw-normal (40.9%
-                svg.icon
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-top.svg').icon.me-2
                 | )
             div Income
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              svg.icon
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon.me-2
             .dropdown-menu.dropdown-menu-end
               a.dropdown-item(href='#') Action
               a.dropdown-item(href='#') Another action
@@ -70,14 +65,12 @@ block view
           div
             .fs-4.fw-semibold 2.49% 
               span.fs-6.fw-normal (84.7%
-                svg.icon
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-top")
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-top.svg').icon.me-2
                 | )
             div Conversion Rate
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              svg.icon
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon.me-2
             .dropdown-menu.dropdown-menu-end
               a.dropdown-item(href='#') Action
               a.dropdown-item(href='#') Another action
@@ -91,14 +84,12 @@ block view
           div
             .fs-4.fw-semibold 44K 
               span.fs-6.fw-normal (-23.6%
-                svg.icon
-                  use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-bottom")
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-arrow-bottom.svg').icon.me-2
                 | )
             div Sessions
           .dropdown
             button.btn.btn-transparent.text-white.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              svg.icon
-                use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+              +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon.me-2
             .dropdown-menu.dropdown-menu-end
               a.dropdown-item(href='#') Action
               a.dropdown-item(href='#') Another action
@@ -125,8 +116,7 @@ block view
             label.btn.btn-outline-secondary
               |  Year
           button.btn.btn-primary(type='button')
-            svg.icon
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-cloud-download")
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-cloud-download.svg').icon
       .c-chart-wrapper(style='height:300px;margin-top:40px;')
         canvas#main-chart.chart(height='300')
     .card-footer
@@ -161,8 +151,7 @@ block view
     .col-sm-6.col-lg-4
       .card(style='--cui-card-cap-bg: #3b5998')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
-            use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
+          +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-facebook-f.svg').icon.icon-3xl.text-white.my-4
           .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
             canvas#social-box-chart-1(height='90')
         .card-body.row.text-center
@@ -177,8 +166,7 @@ block view
     .col-sm-6.col-lg-4
       .card(style='--cui-card-cap-bg: #00aced')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
-            use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
+          +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-twitter.svg').icon.icon-3xl.text-white.my-4
           .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
             canvas#social-box-chart-2(height='90')
         .card-body.row.text-center
@@ -193,8 +181,7 @@ block view
     .col-sm-6.col-lg-4
       .card(style='--cui-card-cap-bg: #4875b4')
         .card-header.position-relative.d-flex.justify-content-center.align-items-center
-          svg.icon.icon-3xl.text-white.my-4
-            use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
+          +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-linkedin.svg').icon.icon-3xl.text-white.my-4
           .chart-wrapper.position-absolute.top-0.start-0.w-100.h-100
             canvas#social-box-chart-3(height='90')
         .card-body.row.text-center
@@ -308,8 +295,7 @@ block view
               hr.mt-0
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user")
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user.svg').icon.icon-lg.me-2
                   div Male
                   .ms-auto.fw-semibold 43%
                 .progress-group-bars
@@ -317,8 +303,7 @@ block view
                     .progress-bar.bg-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
               .progress-group.mb-5
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user-female")
+                  +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user-female.svg').icon.icon-lg.me-2
                   div Female
                   .ms-auto.fw-semibold 37%
                 .progress-group-bars
@@ -326,8 +311,7 @@ block view
                     .progress-bar.bg-warning(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-google")
+                  +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-google.svg').icon.icon-lg.me-2
                   div Organic Search
                   .ms-auto.fw-semibold.me-2 191.235
                   .text-body-secondary.small (56%)
@@ -336,8 +320,7 @@ block view
                     .progress-bar.bg-success(role='progressbar', style='width: 56%', aria-valuenow='56', aria-valuemin='0', aria-valuemax='100')
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-facebook-f")
+                  +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-facebook-f.svg').icon.icon-lg.me-2
                   div Facebook
                   .ms-auto.fw-semibold.me-2 51.223
                   .text-body-secondary.small (15%)
@@ -346,8 +329,7 @@ block view
                     .progress-bar.bg-success(role='progressbar', style='width: 15%', aria-valuenow='15', aria-valuemin='0', aria-valuemax='100')
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-twitter")
+                  +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-twitter.svg').icon.icon-lg.me-2
                   div Twitter
                   .ms-auto.fw-semibold.me-2 37.564
                   .text-body-secondary.small (11%)
@@ -356,8 +338,7 @@ block view
                     .progress-bar.bg-success(role='progressbar', style='width: 11%', aria-valuenow='11', aria-valuemin='0', aria-valuemax='100')
               .progress-group
                 .progress-group-header
-                  svg.icon.icon-lg.me-2
-                    use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-linkedin")
+                  +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-linkedin.svg').icon.icon-lg.me-2
                   div LinkedIn
                   .ms-auto.fw-semibold.me-2 27.319
                   .text-body-secondary.small (8%)
@@ -372,8 +353,7 @@ block view
               thead.fw-semibold.text-nowrap
                 tr.align-middle
                   th.bg-body-secondary.text-center
-                    svg.icon
-                      use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people")
+                    +inlineSvg('node_modules/@coreui/icons/svg/free/cil-people.svg').icon.icon-lg.me-2
                   th.bg-body-secondary User
                   th.bg-body-secondary.text-center Country
                   th.bg-body-secondary Usage
@@ -392,8 +372,7 @@ block view
                       span New
                       |  | Registered: Jan 1, 2023
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-us")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-us.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 50%
@@ -401,16 +380,14 @@ block view
                     .progress.progress-thin
                       .progress-bar.bg-success(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-mastercard")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-mastercard.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap 10 sec ago
                   td
                     .dropdown
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -426,8 +403,7 @@ block view
                       span Recurring
                       |  | Registered: Jan 1, 2023
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-br")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-br.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 10%
@@ -435,16 +411,14 @@ block view
                     .progress.progress-thin
                       .progress-bar.bg-info(role='progressbar', style='width: 10%', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-visa")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-visa.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap 5 minutes ago
                   td
                     .dropdown
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -460,8 +434,7 @@ block view
                       span New
                       |  | Registered: Jan 1, 2023
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-in")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-in.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 74%
@@ -469,16 +442,14 @@ block view
                     .progress.progress-thin
                       .progress-bar.bg-warning(role='progressbar', style='width: 74%', aria-valuenow='74', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-stripe")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-stripe.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap 1 hour ago
                   td
                     .dropdown
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -494,8 +465,7 @@ block view
                       span New
                       |  | Registered: Jan 1, 2023
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-fr")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-fr.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 98%
@@ -503,16 +473,14 @@ block view
                     .progress.progress-thin
                       .progress-bar.bg-danger(role='progressbar', style='width: 98%', aria-valuenow='98', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-paypal")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-paypal.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap Last month
                   td
                     .dropdown
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -528,8 +496,7 @@ block view
                       span New
                       |  | Registered: Jan 1, 2023
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-es")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-es.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 22%
@@ -537,16 +504,14 @@ block view
                     .progress.progress-thin
                       .progress-bar.bg-info(role='progressbar', style='width: 22%', aria-valuenow='22', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-apple-pay")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-apple-pay.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap Last week
                   td
                     .dropdown.dropup
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit
@@ -562,8 +527,7 @@ block view
                       span New
                       |  | Registered: Jan 1, 2023
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/flag.svg#cif-pl")
+                    +inlineSvg('node_modules/@coreui/icons/svg/flag/cif-pl.svg').icon.icon-xl
                   td
                     .d-flex.justify-content-between.align-items-baseline
                       .fw-semibold 43%
@@ -571,16 +535,14 @@ block view
                     .progress.progress-thin
                       .progress-bar.bg-success(role='progressbar', style='width: 43%', aria-valuenow='43', aria-valuemin='0', aria-valuemax='100')
                   td.text-center
-                    svg.icon.icon-xl
-                      use(xlink:href="node_modules/@coreui/icons/sprites/brand.svg#cib-cc-amex")
+                    +inlineSvg('node_modules/@coreui/icons/svg/brand/cib-cc-amex.svg').icon.icon-xl
                   td
                     .small.text-body-secondary Last login
                     .fw-semibold.text-nowrap Yesterday
                   td
                     .dropdown.dropup
                       button.btn.btn-transparent.p-0(type='button', data-coreui-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                        svg.icon
-                          use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-options")
+                        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-options.svg').icon
                       .dropdown-menu.dropdown-menu-end
                         a.dropdown-item(href='#') Info
                         a.dropdown-item(href='#') Edit

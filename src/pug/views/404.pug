@@ -10,8 +10,6 @@ block view
           p.text-body-secondary The page you are looking for was not found.
         .input-group
           span.input-group-text
-            svg.icon
-              use(xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass")
-              |
+            +inlineSvg('node_modules/@coreui/icons/svg/free/cil-magnifying-glass.svg').icon
           input#prependedInput.form-control(size='16', type='text', placeholder='What are you looking for?')
           button.btn.btn-info(type='button') Search

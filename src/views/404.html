@@ -54,10 +54,12 @@
               <h4 class="pt-3">Oops! You're lost.</h4>
               <p class="text-body-secondary">The page you are looking for was not found.</p>
             </div>
-            <div class="input-group"><span class="input-group-text">
-                <svg class="icon">
-                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-magnifying-glass"></use>
-                </svg></span>
+            <div class="input-group">
+              <span class="input-group-text">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="var(--ci-primary-color, currentcolor)" d="m479.6 399.716-81.084-81.084-62.368-25.767A175 175 0 0 0 368 192c0-97.047-78.953-176-176-176S16 94.953 16 192s78.953 176 176 176a175.03 175.03 0 0 0 101.619-32.377l25.7 62.2 81.081 81.088a56 56 0 1 0 79.2-79.195M48 192c0-79.4 64.6-144 144-144s144 64.6 144 144-64.6 144-144 144S48 271.4 48 192m408.971 264.284a24.03 24.03 0 0 1-33.942 0l-76.572-76.572-23.894-57.835 57.837 23.894 76.573 76.572a24.03 24.03 0 0 1-.002 33.941" class="ci-primary" />
+                </svg>
+              </span>
               <input class="form-control" id="prependedInput" size="16" type="text" placeholder="What are you looking for?">
               <button class="btn btn-info" type="button">Search</button>
             </div>
@@ -69,16 +71,13 @@
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <script>
-      const header = document.querySelector('header.header');
-      
-      document.addEventListener('scroll', () => {
+      const header = document.querySelector("header.header");
+
+      document.addEventListener("scroll", () => {
         if (header) {
-          header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+          header.classList.toggle("shadow-sm", document.documentElement.scrollTop > 0);
         }
       });
-      
-    </script>
-    <script> 
     </script>
   </body>
 </html>
