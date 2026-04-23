@@ -1,0 +1,183 @@
+-
+  const nav = [
+    {
+      type: 'item',
+      href: 'index.html',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-speedometer.svg',
+      label: 'Dashboard',
+      badge: { text: 'NEW', color: 'info' }
+    },
+    { type: 'title', label: 'Theme' },
+    {
+      type: 'item',
+      href: 'colors.html',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-drop.svg',
+      label: 'Colors'
+    },
+    {
+      type: 'item',
+      href: 'typography.html',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-pencil.svg',
+      label: 'Typography'
+    },
+    { type: 'title', label: 'Components' },
+    {
+      type: 'group',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-puzzle.svg',
+      label: 'Base',
+      items: [
+        { href: 'base/accordion.html', label: 'Accordion' },
+        { href: 'base/breadcrumb.html', label: 'Breadcrumb' },
+        { href: 'https://coreui.io/bootstrap/docs/components/calendar/', label: 'Calendar', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'base/cards.html', label: 'Cards' },
+        { href: 'base/carousel.html', label: 'Carousel' },
+        { href: 'base/chip.html', label: 'Chip' },
+        { href: 'base/collapse.html', label: 'Collapse' },
+        { href: 'base/list-group.html', label: 'List group' },
+        { href: 'base/navs-tabs.html', label: 'Navs & Tabs' },
+        { href: 'base/pagination.html', label: 'Pagination' },
+        { href: 'base/placeholders.html', label: 'Placeholders' },
+        { href: 'base/popovers.html', label: 'Popovers' },
+        { href: 'base/progress.html', label: 'Progress' },
+        { href: 'base/spinners.html', label: 'Spinners' },
+        { href: 'base/tables.html', label: 'Tables' },
+        { href: 'base/tooltips.html', label: 'Tooltips' }
+      ]
+    },
+    {
+      type: 'group',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-cursor.svg',
+      label: 'Buttons',
+      items: [
+        { href: 'buttons/buttons.html', label: 'Buttons' },
+        { href: 'buttons/button-group.html', label: 'Buttons Group' },
+        { href: 'buttons/dropdowns.html', label: 'Dropdowns' },
+        { href: 'https://coreui.io/bootstrap/docs/components/loading-buttons/', label: 'Loading Buttons', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } }
+      ]
+    },
+    {
+      type: 'item',
+      href: 'charts.html',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-chart-pie.svg',
+      label: 'Charts'
+    },
+    {
+      type: 'group',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-notes.svg',
+      label: 'Forms',
+      items: [
+        { href: 'https://coreui.io/bootstrap/docs/forms/autocomplete/', label: 'Autocomplete', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'forms/checks-radios.html', label: 'Checks and radios' },
+        { href: 'forms/chip-input.html', label: 'Chip input' },
+        { href: 'https://coreui.io/bootstrap/docs/forms/date-picker/', label: 'Date Picker', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'https://coreui.io/bootstrap/docs/forms/date-range-picker/', label: 'Date Range Picker', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'forms/floating-labels.html', label: 'Floating labels' },
+        { href: 'forms/form-control.html', label: 'Form Control' },
+        { href: 'forms/input-group.html', label: 'Input group' },
+        { href: 'https://coreui.io/bootstrap/docs/forms/multi-select/', label: 'Multi Select', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'forms/range.html', label: 'Range' },
+        { href: 'https://coreui.io/bootstrap/docs/forms/range-slider/', label: 'Range Slider', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'https://coreui.io/bootstrap/docs/forms/rating/', label: 'Rating', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'forms/select.html', label: 'Select' },
+        { href: 'https://coreui.io/bootstrap/docs/forms/stepper/', label: 'Stepper', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'https://coreui.io/bootstrap/docs/forms/time-picker/', label: 'Time Picker', target: '_blank', externalIcon: true, badge: { text: 'PRO', color: 'danger' } },
+        { href: 'forms/layout.html', label: 'Layout' },
+        { href: 'forms/validation.html', label: 'Validation' }
+      ]
+    },
+    {
+      type: 'group',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-star.svg',
+      label: 'Icons',
+      items: [
+        { href: 'icons/coreui-icons-free.html', label: 'CoreUI Icons', badge: { text: 'Free', color: 'success' } },
+        { href: 'icons/coreui-icons-brand.html', label: 'CoreUI Icons - Brand' },
+        { href: 'icons/coreui-icons-flag.html', label: 'CoreUI Icons - Flag' }
+      ]
+    },
+    {
+      type: 'group',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-bell.svg',
+      label: 'Notifications',
+      items: [
+        { href: 'notifications/alerts.html', label: 'Alerts' },
+        { href: 'notifications/badge.html', label: 'Badge' },
+        { href: 'notifications/modals.html', label: 'Modals' },
+        { href: 'notifications/toasts.html', label: 'Toasts' }
+      ]
+    },
+    {
+      type: 'item',
+      href: 'widgets.html',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-calculator.svg',
+      label: 'Widgets',
+      badge: { text: 'NEW', color: 'info' }
+    },
+    { type: 'divider' },
+    { type: 'title', label: 'Extras' },
+    {
+      type: 'group',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-star.svg',
+      label: 'Pages',
+      items: [
+        { href: 'login.html', icon: 'node_modules/@coreui/icons/svg/free/cil-account-logout.svg', label: 'Login', target: '_top' },
+        { href: 'register.html', icon: 'node_modules/@coreui/icons/svg/free/cil-account-logout.svg', label: 'Register', target: '_top' },
+        { href: '404.html', icon: 'node_modules/@coreui/icons/svg/free/cil-bug.svg', label: 'Error 404', target: '_top' },
+        { href: '500.html', icon: 'node_modules/@coreui/icons/svg/free/cil-bug.svg', label: 'Error 500', target: '_top' }
+      ]
+    },
+    {
+      type: 'item',
+      href: 'https://coreui.io/bootstrap/docs/templates/installation/',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-description.svg',
+      label: 'Docs',
+      target: '_blank',
+      itemClass: 'mt-auto'
+    },
+    {
+      type: 'item',
+      href: 'https://coreui.io/product/bootstrap-dashboard-template/',
+      icon: 'node_modules/@coreui/icons/svg/free/cil-layers.svg',
+      iconClass: 'text-primary',
+      label: 'Try CoreUI PRO',
+      target: '_top',
+      linkClass: 'text-primary fw-semibold'
+    }
+  ]
+
+mixin navItemIcon(item)
+  if item.icon
+    +inlineSvg(item.icon).nav-icon(class=item.iconClass)
+  else
+    span.nav-icon
+      span.nav-icon-bullet
+
+mixin navItem(item)
+  li.nav-item(class=item.itemClass)
+    a.nav-link(href=item.href class=item.linkClass target=item.target)
+      +navItemIcon(item)
+      |  #{item.label}
+      if item.externalIcon
+        +inlineSvg('node_modules/@coreui/icons/svg/free/cil-external-link.svg').icon.icon-sm.ms-2
+      if item.badge
+        span.badge.badge-sm(class=`bg-${item.badge.color}`).ms-auto= item.badge.text
+
+mixin navGroup(group)
+  li.nav-group
+    a.nav-link.nav-group-toggle(href='#')
+      +inlineSvg(group.icon).nav-icon
+      |  #{group.label}
+    ul.nav-group-items.compact
+      each item in group.items
+        +navItem(item)
+
+ul.sidebar-nav(data-coreui="navigation" data-simplebar)
+  each item in nav
+    if item.type === 'item'
+      +navItem(item)
+    else if item.type === 'title'
+      li.nav-title= item.label
+    else if item.type === 'group'
+      +navGroup(item)
+    else if item.type === 'divider'
+      li.nav-divider
