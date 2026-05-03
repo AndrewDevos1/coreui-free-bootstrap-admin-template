@@ -43,7 +43,7 @@
     <link href="css/examples.css" rel="stylesheet">
     <script src="js/config.js"></script>
     <script src="js/color-modes.js"></script>
-    <link rel="canonical" href="https://coreui.io/bootstrap/docs/forms/floating-labels/">
+    <link rel="canonical" href="https://coreui.io/bootstrap/docs/components/chip/">
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
@@ -693,8 +693,7 @@
             <ol class="breadcrumb my-0">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><span>Components</span></li>
-              <li class="breadcrumb-item"><span>Forms</span></li>
-              <li class="breadcrumb-item active"><span>Floating labels</span></li>
+              <li class="breadcrumb-item active"><span>Chip</span></li>
             </ol>
           </nav>
         </div>
@@ -710,39 +709,21 @@
                 . This component is part of this library, and we present only the basic usage of it here. To explore extended examples, detailed API documentation, and customization options, refer to our docs.
               </div>
               <div class="col-md-auto col-12 mt-3 mt-lg-0 d-flex flex-column">
-                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/forms/floating-labels/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
+                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/components/chip/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
                 <div class="text-center my-1">or</div>
                 <a class="btn btn-danger text-nowrap text-white" href="https://coreui.io/pricing/?framework=bootstrap&amp;src=free-bootstrap-admin-template-docs-banner" target="_blank" rel="noopener noreferrer">Get CoreUI PRO →</a>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-lg-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Floating labels</strong>
-                  <span class="small ms-1">Basic example</span>
+                  <strong>Chip</strong>
+                  <span class="small ms-1">Basic and outline</span>
                 </div>
                 <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Wrap a pair of
-                    <code>&lt;input class=&quot;form-control&quot;&gt;</code>
-                    and
-                    <code>&lt;label&gt;</code>
-                    elements in
-                    <code>.form-floating</code>
-                    to enable floating labels with Bootstrap’s textual form fields. A
-                    <code>placeholder</code>
-                    is required on each
-                    <code>&lt;input&gt;</code>
-                    as our method of CSS-only floating labels uses the
-                    <code>:placeholder-shown</code>
-                    pseudo-element. Also note that the
-                    <code>&lt;input&gt;</code>
-                    must come first so we can utilize a sibling selector (e.g.,
-                    <code>~</code>
-                    ).
-                  </p>
+                  <p class="text-body-secondary small">Chips are compact UI elements for labels, filters, and quick selections. Below are simple examples and outline variants based on the CoreUI component API.</p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -754,7 +735,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/floating-labels/#example" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip/#basic-chips" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -764,23 +745,19 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
-                        <div class="form-floating mb-3">
-                          <input class="form-control" id="floatingInput" type="email" placeholder="name@example.com">
-                          <label for="floatingInput">Email address</label>
-                        </div>
-                        <div class="form-floating">
-                          <input class="form-control" id="floatingPassword" type="password" placeholder="Password">
-                          <label for="floatingPassword">Password</label>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="chip">Basic chip</span>
+                          <span class="chip">Frontend</span>
+                          <span class="chip">Design system</span>
+                          <span class="chip">Documentation</span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <p class="text-body-secondary small">
-                    When there’s a
-                    <code>value</code>
-                    already defined,
-                    <code>&lt;label&gt;</code>
-                    s will automatically adjust to their floated position.
+                    Add
+                    <code>.chip-outline</code>
+                    to create a lighter, bordered appearance.
                   </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
@@ -793,7 +770,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/floating-labels/#example" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip/#outline-chips" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -803,14 +780,24 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
-                        <form class="form-floating">
-                          <input class="form-control" id="floatingInputValue" type="email" placeholder="name@example.com" value="test@example.com">
-                          <label for="floatingInputValue">Input with value</label>
-                        </form>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="chip chip-outline">Outline chip</span>
+                          <span class="chip chip-outline">Product</span>
+                          <span class="chip chip-outline">Marketing</span>
+                          <span class="chip chip-outline">Analytics</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <p class="text-body-secondary small">Form validation styles also work as expected.</p>
+                </div>
+              </div>
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Chip</strong>
+                  <span class="small ms-1">With icons and avatars</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">Chips can include icons, user avatars, or avatar components to make tags easier to scan.</p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -822,7 +809,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/floating-labels/#example" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip/#chips-with-icons" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -832,32 +819,27 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
-                        <form class="form-floating">
-                          <input class="form-control is-invalid" id="floatingInputInvalid" type="email" placeholder="name@example.com" value="test@example.com">
-                          <label for="floatingInputInvalid">Invalid input</label>
-                        </form>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="chip">
+                            <span class="chip-icon">
+                              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M8 1a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm-5 12s0-3 5-3 5 3 5 3v1H3v-1Z"></path>
+                              </svg>
+                            </span>
+                            Team member
+                          </span>
+                          <span class="chip">
+                            <span class="chip-icon">
+                              <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M2 2h12v2H2V2Zm0 5h8v2H2V7Zm0 5h12v2H2v-2Z"></path>
+                              </svg>
+                            </span>
+                            Backlog item
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Floating labels</strong>
-                  <span class="small ms-1">Textareas</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    By default,
-                    <code>&lt;textarea&gt;</code>
-                    s with
-                    <code>.form-control</code>
-                    will be the same height as
-                    <code>&lt;input&gt;</code>
-                    s.
-                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -869,7 +851,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/floating-labels/#textareas" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip/#chips-with-avatars" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -879,22 +861,38 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1003">
-                        <div class="form-floating">
-                          <textarea class="form-control" id="floatingTextarea" placeholder="Leave a comment here"></textarea>
-                          <label for="floatingTextarea">Comments</label>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="chip">
+                            <img class="chip-img" src="assets/img/avatars/1.jpg" width="16" height="16" alt="">
+                            Olivia Martin
+                          </span>
+                          <span class="chip">
+                            <img class="chip-img" src="assets/img/avatars/4.jpg" width="16" height="16" alt="">
+                            Ethan Carter
+                          </span>
+                          <span class="chip">
+                            <span class="avatar avatar-sm bg-primary text-white">A</span>
+                            Account manager
+                          </span>
+                          <span class="chip">
+                            <span class="avatar avatar-sm bg-success text-white">Q</span>
+                            QA owner
+                          </span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <p class="text-body-secondary small">
-                    To set a custom height on your
-                    <code>&lt;textarea&gt;</code>
-                    , do not use the
-                    <code>rows</code>
-                    attribute. Instead, set an explicit
-                    <code>height</code>
-                    (either inline or via custom CSS).
-                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Chip</strong>
+                  <span class="small ms-1">Variants and sizes</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">Variant classes make chips useful for filters and status states, and size modifiers help match denser or more spacious layouts.</p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -906,7 +904,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/floating-labels/#textareas" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip/#variants" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -916,40 +914,35 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1004">
-                        <div class="form-floating">
-                          <textarea class="form-control" id="floatingTextarea2" placeholder="Leave a comment here" style="height: 100px"></textarea>
-                          <label for="floatingTextarea2">Comments</label>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                          <span class="chip chip-primary chip-clickable" tabindex="0">Product</span>
+                          <span class="chip chip-primary active" tabindex="0">Active product</span>
+                          <span class="chip chip-success chip-clickable" tabindex="0">Published</span>
+                          <span class="chip chip-success active" tabindex="0">Live</span>
+                          <span class="chip chip-warning chip-clickable" tabindex="0">Review</span>
+                          <span class="chip chip-danger active" tabindex="0">Blocked</span>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="chip chip-sm">Small chip</span>
+                          <span class="chip">Default chip</span>
+                          <span class="chip chip-lg">Large chip</span>
+                          <span class="chip chip-outline chip-primary chip-clickable" tabindex="0">Outline primary</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Floating labels</strong>
-                  <span class="small ms-1">Selects</span>
+                  <strong>Chip</strong>
+                  <span class="small ms-1">Interactive examples</span>
                 </div>
                 <div class="card-body">
                   <p class="text-body-secondary small">
-                    Other than
-                    <code>.form-control</code>
-                    , floating labels are only available on
-                    <code>.form-select</code>
-                    s. They work in the same way, but unlike
-                    <code>&lt;input&gt;</code>
-                    s, they’ll always show the
-                    <code>&lt;label&gt;</code>
-                    in its floated state.
-                    <strong>
-                      Selects with
-                      <code>size</code>
-                      and
-                      <code>multiple</code>
-                      are not supported.
-                    </strong>
+                    The JavaScript plugin supports selectable and removable chips using
+                    <code>data-coreui-chip</code>
+                    attributes.
                   </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
@@ -962,7 +955,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/floating-labels/#selects" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/chip/#data-attributes" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -972,68 +965,24 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1005">
-                        <div class="form-floating">
-                          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                          <label for="floatingSelect">Works with selects</label>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                          <span class="chip" data-coreui-chip data-coreui-selectable="true">Selectable</span>
+                          <span class="chip" data-coreui-chip data-coreui-selectable="true" data-coreui-selected="true">Selected</span>
+                          <span class="chip" data-coreui-chip data-coreui-removable="true">Removable</span>
+                          <span class="chip disabled" data-coreui-chip>Disabled</span>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Floating labels</strong>
-                  <span class="small ms-1">Layout</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">When working with the CoreUI for Bootstrap grid system, be sure to place form elements within column classes.</p>
-                  <div class="example">
-                    <ul class="nav nav-underline-border" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1006" role="tab">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
-                          </svg>
-                          Preview
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/floating-labels/#layout" target="_blank">
-                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
-                          </svg>
-                          Code
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content rounded-bottom">
-                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1006">
-                        <div class="row g-2">
-                          <div class="col-md">
-                            <div class="form-floating">
-                              <input class="form-control" id="floatingInputGrid" type="email" placeholder="name@example.com" value="mdo@example.com">
-                              <label for="floatingInputGrid">Email address</label>
-                            </div>
-                          </div>
-                          <div class="col-md">
-                            <div class="form-floating">
-                              <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                              <label for="floatingSelectGrid">Works with selects</label>
-                            </div>
-                          </div>
+                        <div class="d-flex flex-wrap gap-2">
+                          <span class="chip chip-lg">
+                            Team Alpha
+                            <button class="chip-remove" type="button" aria-label="Remove">
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                                <line x1="4" y1="4" x2="12" y2="12"></line>
+                                <line x1="12" y1="4" x2="4" y2="12"></line>
+                              </svg>
+                            </button>
+                          </span>
+                          <span class="chip chip-outline chip-info" data-coreui-chip data-coreui-selectable="true">Filter: Priority</span>
+                          <span class="chip chip-outline chip-success" data-coreui-chip data-coreui-selectable="true" data-coreui-selected="true">Filter: Ready</span>
                         </div>
                       </div>
                     </div>

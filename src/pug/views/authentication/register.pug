@@ -1,0 +1,28 @@
+extends ../../_layout/pages.pug
+
+block view
+  .container
+    .row.justify-content-center
+      .col-md-6
+        .card.mb-4.mx-4
+          .card-body.p-4
+            h1 Register
+            p.text-body-secondary Create your account
+            .input-group.mb-3
+              span.input-group-text
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-user.svg').icon
+              input.form-control(type='text', placeholder='Username')
+            .input-group.mb-3
+              span.input-group-text
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-envelope-open.svg').icon
+              input.form-control(type='text', placeholder='Email')
+            .input-group.mb-3
+              span.input-group-text
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-lock-locked.svg').icon
+              input.form-control(type='password', placeholder='Password')
+            .input-group.mb-4
+              span.input-group-text
+                +inlineSvg('node_modules/@coreui/icons/svg/free/cil-lock-locked.svg').icon
+              input.form-control(type='password', placeholder='Repeat password')
+            button.btn.btn-block.btn-success(type='button') Create Account
+

@@ -43,7 +43,7 @@
     <link href="css/examples.css" rel="stylesheet">
     <script src="js/config.js"></script>
     <script src="js/color-modes.js"></script>
-    <link rel="canonical" href="https://coreui.io/bootstrap/docs/forms/checks-radios/">
+    <link rel="canonical" href="https://coreui.io/bootstrap/docs/components/dropdowns/">
   </head>
   <body>
     <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
@@ -693,8 +693,7 @@
             <ol class="breadcrumb my-0">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><span>Components</span></li>
-              <li class="breadcrumb-item"><span>Forms</span></li>
-              <li class="breadcrumb-item active"><span>Checks &amp; radios</span></li>
+              <li class="breadcrumb-item active"><span>Dropdowns</span></li>
             </ol>
           </nav>
         </div>
@@ -710,7 +709,7 @@
                 . This component is part of this library, and we present only the basic usage of it here. To explore extended examples, detailed API documentation, and customization options, refer to our docs.
               </div>
               <div class="col-md-auto col-12 mt-3 mt-lg-0 d-flex flex-column">
-                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/forms/checks-radios/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
+                <a class="btn btn-primary text-nowrap text-white" href="https://coreui.io/bootstrap/docs/components/dropdowns/" target="_blank" rel="noopener noreferrer">Explore Documentation</a>
                 <div class="text-center my-1">or</div>
                 <a class="btn btn-danger text-nowrap text-white" href="https://coreui.io/pricing/?framework=bootstrap&amp;src=free-bootstrap-admin-template-docs-banner" target="_blank" rel="noopener noreferrer">Get CoreUI PRO →</a>
               </div>
@@ -719,8 +718,18 @@
           <div class="row">
             <div class="col-12">
               <div class="card mb-4">
-                <div class="card-header"><strong>Checkbox</strong></div>
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Single button</span>
+                </div>
                 <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Each single
+                    <code>.btn</code>
+                    can be changed into a dropdown toggle with small changes. Here’s how you can put them to work with either
+                    <code>&lt;button&gt;</code>
+                    elements:
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -732,7 +741,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#checks" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#single-button" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -742,28 +751,21 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1000">
-                        <div class="form-check">
-                          <input class="form-check-input" id="flexCheckDefault" type="checkbox">
-                          <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="flexCheckChecked" type="checkbox" checked>
-                          <label class="form-check-label" for="flexCheckChecked">Checked checkbox</label>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header"><strong>Indeterminate</strong></div>
-                <div class="card-body">
                   <p class="text-body-secondary small">
-                    Checkboxes can utilize the
-                    <code>:indeterminate</code>
-                    pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
+                    And with
+                    <code>&lt;a&gt;</code>
+                    elements:
                   </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
@@ -776,7 +778,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#indeterminate" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#single-button" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -786,30 +788,18 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1001">
-                        <div class="form-check form-example-indeterminate">
-                          <input class="form-check-input" id="flexCheckIndeterminate" type="checkbox">
-                          <label class="form-check-label" for="flexCheckIndeterminate">Indeterminate checkbox</label>
+                        <div class="dropdown">
+                          <a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Checkbox</strong>
-                  <span class="small ms-1">Disabled</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Add the
-                    <code>disabled</code>
-                    attribute and the associated
-                    <code>&lt;label&gt;</code>
-                    s are automatically styled to match with a lighter color to help indicate the input’s state.
-                  </p>
+                  <p class="text-body-secondary small">The best part is you can do this with any button variant, too:</p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -821,7 +811,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#disabled" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#single-button" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -831,13 +821,77 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1002">
-                        <div class="form-check">
-                          <input class="form-check-input" id="flexCheckDisabled" type="checkbox" disabled>
-                          <label class="form-check-label" for="flexCheckDisabled">Disabled checkbox</label>
+                        <div class="btn-group">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Primary</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="flexCheckCheckedDisabled" type="checkbox" checked disabled>
-                          <label class="form-check-label" for="flexCheckCheckedDisabled">Disabled checked checkbox</label>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Secondary</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-success dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Success</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-info dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Info</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-warning dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Warning</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-danger dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Danger</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -845,12 +899,25 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
             <div class="col-12">
               <div class="card mb-4">
-                <div class="card-header"><strong>Radios</strong></div>
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Split button</span>
+                </div>
                 <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of
+                    <code>.dropdown-toggle-split</code>
+                    for proper spacing around the dropdown caret.
+                  </p>
+                  <p class="text-body-secondary small">
+                    We use this extra class to reduce the horizontal
+                    <code>padding</code>
+                    on either side of the caret by 25% and remove the
+                    <code>margin-left</code>
+                    that’s attached for normal button dropdowns. Those additional changes hold the caret centered in the split button and implement a more properly sized hit area next to the main button.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -862,7 +929,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#radios" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#split-button" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -872,13 +939,83 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1003">
-                        <div class="form-check">
-                          <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
-                          <label class="form-check-label" for="flexRadioDefault1">Default radio</label>
+                        <div class="btn-group">
+                          <button class="btn btn-primary" type="button">Primary</button>
+                          <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                          <label class="form-check-label" for="flexRadioDefault2">Default checked radio</label>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary" type="button">Secondary</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-success" type="button">Success</button>
+                          <button class="btn btn-success dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-info" type="button">Info</button>
+                          <button class="btn btn-info dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-warning" type="button">Warning</button>
+                          <button class="btn btn-warning dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-danger" type="button">Danger</button>
+                          <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -889,17 +1026,11 @@
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Radios</strong>
-                  <span class="small ms-1">Disabled</span>
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Sizing</span>
                 </div>
                 <div class="card-body">
-                  <p class="text-body-secondary small">
-                    Add the
-                    <code>disabled</code>
-                    attribute and the associated
-                    <code>&lt;label&gt;</code>
-                    s are automatically styled to match with a lighter color to help indicate the input’s state.
-                  </p>
+                  <p class="text-body-secondary small">Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.</p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -911,7 +1042,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#disabled-1" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#sizing" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -921,33 +1052,34 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1004">
-                        <div class="form-check">
-                          <input class="form-check-input" id="flexRadioDisabled" type="radio" name="flexRadioDisabled" disabled>
-                          <label class="form-check-label" for="flexRadioDisabled">Disabled radio</label>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Large button</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="flexRadioCheckedDisabled" type="radio" name="flexRadioDisabled" checked disabled>
-                          <label class="form-check-label" for="flexRadioCheckedDisabled">Disabled checked radio</label>
+                        <div class="btn-group">
+                          <button class="btn btn-lg btn-secondary" type="button">Large split button</button>
+                          <button class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header"><strong>Switches</strong></div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    A switch has the markup of a custom checkbox but uses the
-                    <code>.form-switch</code>
-                    class to render a toggle switch. Switches also support the
-                    <code>disabled</code>
-                    attribute.
-                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -959,7 +1091,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#switches" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#sizing" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -969,21 +1101,30 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1005">
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox">
-                          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Small button</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" checked>
-                          <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
-                        </div>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" id="flexSwitchCheckDisabled" type="checkbox" disabled>
-                          <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
-                        </div>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" id="flexSwitchCheckCheckedDisabled" type="checkbox" checked disabled>
-                          <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                        <div class="btn-group">
+                          <button class="btn btn-sm btn-secondary" type="button">Small split button</button>
+                          <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -994,10 +1135,17 @@
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Switches</strong>
-                  <span class="small ms-1">Sizes</span>
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Dark dropdowns</span>
                 </div>
                 <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Opt into darker dropdowns to match a dark navbar or custom style by adding
+                    <code>.dropdown-menu-dark</code>
+                    onto an existing
+                    <code>.dropdown-menu</code>
+                    . No changes are required to the dropdown items.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -1009,7 +1157,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#sizes" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#dark-dropdowns" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1019,38 +1167,22 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1006">
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox">
-                          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-                        </div>
-                        <div class="form-check form-switch form-switch-lg">
-                          <input class="form-check-input" id="flexSwitchCheckDefaultLg" type="checkbox">
-                          <label class="form-check-label" for="flexSwitchCheckDefaultLg">Large switch checkbox input</label>
-                        </div>
-                        <div class="form-check form-switch form-switch-xl">
-                          <input class="form-check-input" id="flexSwitchCheckDefaultXl" type="checkbox">
-                          <label class="form-check-label" for="flexSwitchCheckDefaultXl">Extra large switch checkbox input</label>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header">
-                  <strong>Checks and Radios</strong>
-                  <span class="small ms-1">Default layout (stacked)</span>
-                </div>
-                <div class="card-body">
-                  <p class="text-body-secondary small">
-                    By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with
-                    <code>.form-check</code>
-                    .
-                  </p>
+                  <p class="text-body-secondary small">And putting it to use in a navbar:</p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -1062,7 +1194,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#default-stacked" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#dark-dropdowns" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1072,17 +1204,42 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1007">
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultCheck1" type="checkbox">
-                          <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="defaultCheck2" type="checkbox" disabled>
-                          <label class="form-check-label" for="defaultCheck2">Disabled checkbox</label>
-                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                          <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Navbar</a>
+                            <button class="navbar-toggler" type="button" data-coreui-toggle="collapse" data-coreui-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                              <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" href="#" role="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Dropup</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Trigger dropdown menus above elements by adding
+                    <code>.dropup</code>
+                    to the parent element.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -1094,7 +1251,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#default-stacked" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#dropup" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1104,17 +1261,30 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1008">
-                        <div class="form-check">
-                          <input class="form-check-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked>
-                          <label class="form-check-label" for="exampleRadios1">Default radio</label>
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2">
-                          <label class="form-check-label" for="exampleRadios2">Second default radio</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" id="exampleRadios3" type="radio" name="exampleRadios" value="option3" disabled>
-                          <label class="form-check-label" for="exampleRadios3">Disabled radio</label>
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary" type="button">Split dropup</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -1125,16 +1295,14 @@
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Checks and Radios</strong>
-                  <span class="small ms-1">Inline</span>
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Dropright</span>
                 </div>
                 <div class="card-body">
                   <p class="text-body-secondary small">
-                    Group checkboxes or radios on the same horizontal row by adding
-                    <code>.form-check-inline</code>
-                    to any
-                    <code>.form-check</code>
-                    .
+                    Trigger dropdown menus at the right of the elements by adding
+                    <code>.dropend</code>
+                    to the parent element.
                   </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
@@ -1147,7 +1315,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#inline" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#dropright" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1157,21 +1325,49 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1009">
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" id="inlineCheckbox1" type="checkbox" value="option1">
-                          <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropright</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" id="inlineCheckbox2" type="checkbox" value="option2">
-                          <label class="form-check-label" for="inlineCheckbox2">2</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" id="inlineCheckbox3" type="checkbox" value="option3" disabled>
-                          <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary" type="button">Split dropend</button>
+                          <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropright</span></button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Dropleft</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Trigger dropdown menus at the left of the elements by adding
+                    <code>.dropstart</code>
+                    to the parent element.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -1183,7 +1379,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#inline" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#dropleft" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1193,17 +1389,32 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1010">
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1">
-                          <label class="form-check-label" for="inlineRadio1">1</label>
+                        <div class="btn-group dropstart">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropleft</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
                         </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2">
-                          <label class="form-check-label" for="inlineRadio2">2</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" id="inlineRadio3" type="radio" name="inlineRadioOptions" value="option3" disabled>
-                          <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                        <div class="btn-group">
+                          <div class="btn-group dropstart" role="group">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropleft</span></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                          </div>
+                          <button class="btn btn-secondary" type="button">Split dropstart</button>
                         </div>
                       </div>
                     </div>
@@ -1214,18 +1425,18 @@
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Checks and Radios</strong>
-                  <span class="small ms-1">Without labels</span>
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Menu items</span>
                 </div>
                 <div class="card-body">
                   <p class="text-body-secondary small">
-                    Omit the wrapping
-                    <code>.form-check</code>
-                    for checkboxes and radios that have no label text. Remember to still provide some form of accessible name for assistive technologies (for instance, using
-                    <code>aria-label</code>
-                    ). See the
-                    <a href="https://coreui.io/bootstrap/docs/forms/overview/#accessibility">forms overview accessibility</a>
-                    section for details.
+                    Historically dropdown menu contents
+                    <em>had</em>
+                    to be links, but that’s no longer the case with v4. Now you can optionally use
+                    <code>&lt;button&gt;</code>
+                    elements in your dropdowns instead of just
+                    <code>&lt;a&gt;</code>
+                    s.
                   </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
@@ -1238,7 +1449,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#without-labels" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#menu-items" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1248,39 +1459,28 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1011">
-                        <div>
-                          <input class="form-check-input" id="checkboxNoLabel" type="checkbox" aria-label="...">
-                        </div>
-                        <div>
-                          <input class="form-check-input" id="radioNoLabel1" type="radio" name="radioNoLabel" aria-label="...">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="card mb-4">
-                <div class="card-header"><strong>Toggle buttons</strong></div>
-                <div class="card-body">
                   <p class="text-body-secondary small">
-                    Create button-like checkboxes and radio buttons by using
-                    <code>.btn</code>
-                    styles rather than
-                    <code>.form-check-label</code>
-                    on the
-                    <code>&lt;label&gt;</code>
-                    elements. These toggle buttons can further be grouped in a
-                    <a href="https://coreui.io/bootstrap/docs/components/button-group/">button group</a>
-                    if needed.
+                    You can also create non-interactive dropdown items with
+                    <code>.dropdown-item-text</code>
+                    . Feel free to style further with custom CSS or text utilities.
                   </p>
-                  <h3 id="checkbox-toggle-buttons">
-                    Checkbox toggle buttons
-                    <a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#checkbox-toggle-buttons" style="padding-left: 0.375em"></a>
-                  </h3>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -1292,7 +1492,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#toggle-buttons" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#menu-items" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1302,11 +1502,38 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1012">
-                        <input class="btn-check" id="btn-check" type="checkbox" autocomplete="off">
-                        <label class="btn btn-primary" for="btn-check">Single toggle</label>
+                        <ul class="dropdown-menu">
+                          <li><span class="dropdown-item-text">Dropdown item text</span></li>
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Active</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Add
+                    <code>.active</code>
+                    to items in the dropdown to
+                    <strong>style them as active</strong>
+                    . To convey the active state to assistive technologies, use the
+                    <code>aria-current</code>
+                    attribute — using the
+                    <code>page</code>
+                    value for the current page, or
+                    <code>true</code>
+                    for the current item in a set.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -1318,7 +1545,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#toggle-buttons" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#active" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1328,11 +1555,31 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1013">
-                        <input class="btn-check" id="btn-check-2" type="checkbox" checked autocomplete="off">
-                        <label class="btn btn-primary" for="btn-check-2">Checked</label>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Regular link</a></li>
+                          <li><a class="dropdown-item active" href="#" aria-current="true">Active link</a></li>
+                          <li><a class="dropdown-item" href="#">Another link</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Disabled</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Add
+                    <code>.disabled</code>
+                    to items in the dropdown to
+                    <strong>style them as disabled</strong>
+                    .
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -1344,7 +1591,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#toggle-buttons" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#disabled" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1354,8 +1601,11 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1014">
-                        <input class="btn-check" id="btn-check-3" type="checkbox" autocomplete="off" disabled>
-                        <label class="btn btn-primary" for="btn-check-3">Disabled</label>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Regular link</a></li>
+                          <li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">Disabled link</a></li>
+                          <li><a class="dropdown-item" href="#">Another link</a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1365,10 +1615,17 @@
             <div class="col-12">
               <div class="card mb-4">
                 <div class="card-header">
-                  <strong>Toggle buttons</strong>
-                  <span class="small ms-1">Radio</span>
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Menu alignment</span>
                 </div>
                 <div class="card-body">
+                  <p class="text-body-secondary small">
+                    By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add
+                    <code>.dropdown-menu-end</code>
+                    to a
+                    <code>.dropdown-menu</code>
+                    to right align the dropdown menu.
+                  </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
                       <li class="nav-item">
@@ -1380,7 +1637,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#radio-toggle-buttons" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#menu-alignment" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1390,25 +1647,44 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1015">
-                        <input class="btn-check" id="option1" type="radio" name="options" autocomplete="off" checked>
-                        <label class="btn btn-secondary" for="option1">Checked</label>
-                        <input class="btn-check" id="option2" type="radio" name="options" autocomplete="off">
-                        <label class="btn btn-secondary" for="option2">Radio</label>
-                        <input class="btn-check" id="option3" type="radio" name="options" autocomplete="off" disabled>
-                        <label class="btn btn-secondary" for="option3">Disabled</label>
-                        <input class="btn-check" id="option4" type="radio" name="options" autocomplete="off">
-                        <label class="btn btn-secondary" for="option4">Radio</label>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu example</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <h3 id="outlined-styles">
-                    Outlined styles
-                    <a class="anchorjs-link" aria-label="Anchor" data-anchorjs-icon="#" href="#outlined-styles" style="padding-left: 0.375em"></a>
-                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Responsive alignment</span>
+                </div>
+                <div class="card-body">
                   <p class="text-body-secondary small">
-                    Different variants of
-                    <code>.btn</code>
-                    , such at the various outlined styles, are supported.
+                    If you want to use responsive alignment, disable dynamic positioning by adding the
+                    <code>data-coreui-display="static"</code>
+                    attribute and use the responsive variation classes.
+                  </p>
+                  <p class="text-body-secondary small">
+                    To align
+                    <strong>right</strong>
+                    the dropdown menu with the given breakpoint or larger, add
+                    <code>.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-end</code>
+                    .
                   </p>
                   <div class="example">
                     <ul class="nav nav-underline-border" role="tablist">
@@ -1421,7 +1697,7 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/forms/checks-radios/#radio-toggle-buttons" target="_blank">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#responsive-alignment" target="_blank">
                           <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
                           </svg>
@@ -1431,16 +1707,369 @@
                     </ul>
                     <div class="tab-content rounded-bottom">
                       <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1016">
-                        <input class="btn-check" id="btn-check-outlined" type="checkbox" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btn-check-outlined">Single toggle</label>
-                        <br>
-                        <input class="btn-check" id="btn-check-2-outlined" type="checkbox" checked autocomplete="off">
-                        <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label>
-                        <br>
-                        <input class="btn-check" id="success-outlined" type="radio" name="options-outlined" autocomplete="off" checked>
-                        <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
-                        <input class="btn-check" id="danger-outlined" type="radio" name="options-outlined" autocomplete="off">
-                        <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned but right aligned when large screen</button>
+                          <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1017" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#responsive-alignment" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1017">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned but left aligned when large screen</button>
+                          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li>
+                              <button class="dropdown-item" type="button">Action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Another action</button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">Something else here</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1018" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#responsive-alignment" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1018">
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Right-aligned menu</button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Left-aligned, right-aligned lg</button>
+                          <ul class="dropdown-menu dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" data-coreui-display="static" aria-expanded="false">Right-aligned, left-aligned lg</button>
+                          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropstart">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropstart</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropend">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropend</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                        <div class="btn-group dropup">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-coreui-toggle="dropdown" aria-expanded="false">Dropup</button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <strong>Dropdown</strong>
+                    <span class="small ms-1">Headers</span>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-body-secondary small">Add a header to label sections of actions in any dropdown menu.</p>
+                    <div class="example">
+                      <ul class="nav nav-underline-border" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1019" role="tab">
+                            <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                              <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                            </svg>
+                            Preview
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#headers" target="_blank">
+                            <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                              <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                            </svg>
+                            Code
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="tab-content rounded-bottom">
+                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1019">
+                          <ul class="dropdown-menu">
+                            <li>
+                              <h6 class="dropdown-header">Dropdown header</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Dividers</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">Separate groups of related menu items with a divider.</p>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1020" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#dividers" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1020">
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Text</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Place any freeform text within a dropdown menu with text and use
+                    <a href="https://coreui.io/bootstrap/docs/utilities/spacing/">spacing utilities</a>
+                    . Note that you’ll likely need additional sizing styles to constrain the menu width.
+                  </p>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1021" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#text" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1021">
+                        <div class="dropdown-menu p-4 text-body-secondary" style="max-width: 200px">
+                          <p>Some example text that's free-flowing within the dropdown menu.</p>
+                          <p class="mb-0">And this is more example text.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card mb-4">
+                <div class="card-header">
+                  <strong>Dropdown</strong>
+                  <span class="small ms-1">Forms</span>
+                </div>
+                <div class="card-body">
+                  <p class="text-body-secondary small">
+                    Put a form within a dropdown menu, or make it into a dropdown menu, and use
+                    <a href="https://coreui.io/bootstrap/docs/utilities/spacing/">margin or padding utilities</a>
+                    to give it the negative space you require.
+                  </p>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1022" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#forms" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1022">
+                        <div class="dropdown-menu">
+                          <form class="px-4 py-3">
+                            <div class="mb-3">
+                              <label class="form-label" for="exampleDropdownFormEmail1">Email address</label>
+                              <input class="form-control" id="exampleDropdownFormEmail1" type="email" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label" for="exampleDropdownFormPassword1">Password</label>
+                              <input class="form-control" id="exampleDropdownFormPassword1" type="password" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              <div class="form-check">
+                                <input class="form-check-input" id="dropdownCheck" type="checkbox">
+                                <label class="form-check-label" for="dropdownCheck">Remember me</label>
+                              </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Sign in</button>
+                          </form>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">New around here? Sign up</a>
+                          <a class="dropdown-item" href="#">Forgot password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="example">
+                    <ul class="nav nav-underline-border" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-coreui-toggle="tab" href="#preview-1023" role="tab">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="M444.4 235.236 132.275 49.449A24 24 0 0 0 96 70.072v364.142a24.017 24.017 0 0 0 35.907 20.839L444.03 276.7a24 24 0 0 0 .367-41.461ZM128 420.429V84.144l288.244 171.574Z" class="ci-primary" />
+                          </svg>
+                          Preview
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://coreui.io/bootstrap/docs/components/dropdowns/#forms" target="_blank">
+                          <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="var(--ci-primary-color, currentcolor)" d="m388.632 393.82 107.191-137.88-107.139-137.762-25.26 19.644 91.864 118.122-91.92 118.236zm-240.053-19.639L56.712 255.999l91.917-118.176-25.258-19.646L16.177 255.993l107.137 137.826zM330.529 16h-32.97L178.441 496h32.971z" class="ci-primary" />
+                          </svg>
+                          Code
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content rounded-bottom">
+                      <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1023">
+                        <form class="dropdown-menu p-4">
+                          <div class="mb-3">
+                            <label class="form-label" for="exampleDropdownFormEmail2">Email address</label>
+                            <input class="form-control" id="exampleDropdownFormEmail2" type="email" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label" for="exampleDropdownFormPassword2">Password</label>
+                            <input class="form-control" id="exampleDropdownFormPassword2" type="password" placeholder="Password">
+                          </div>
+                          <div class="mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" id="dropdownCheck2" type="checkbox">
+                              <label class="form-check-label" for="dropdownCheck2">Remember me</label>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary" type="submit">Sign in</button>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -1472,11 +2101,6 @@
         if (header) {
           header.classList.toggle("shadow-sm", document.documentElement.scrollTop > 0);
         }
-      });
-    </script>
-    <script>
-      document.querySelectorAll('.form-example-indeterminate [type="checkbox"]').forEach(function (checkbox) {
-        checkbox.indeterminate = true;
       });
     </script>
   </body>
